@@ -1,4 +1,5 @@
 First, copy and paste these three lines into the terminal
+
 cd C:\VIVEPro2\Projects\data_collection 
 conda activate py11
 python oymotion_streamer.py
