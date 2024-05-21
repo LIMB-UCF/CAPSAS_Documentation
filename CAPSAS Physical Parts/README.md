@@ -8,8 +8,8 @@ uses two M3*16mm screws and two M3 nuts per bar
 
 connector block (1 or 2 needed per hexagon dependent on location; ~28 needed for whole system): 
 
-*is epoxied to the back of the hexagon and M4 heat press inserts are added in the holes  
-*M4*12mm screws are used to connect it to the arms and therefore the hexagon to the frame 
+  *is epoxied to the back of the hexagon and M4 heat press inserts are added in the holes  
+  *M4*12mm screws are used to connect it to the arms and therefore the hexagon to the frame 
 
 elbows (not yet added to OneDrive) 
 
