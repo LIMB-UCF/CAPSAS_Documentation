@@ -9,7 +9,9 @@ https://youtu.be/4Bmu42mNIyQ
 
 ## Using the CAPSAS
 
-show diagram
+![image](https://github.com/LIMB-UCF/CAPSAS_Documentation/assets/69369213/e816d62a-b948-4343-bbef-259fd5ef5be6)
 
-talk about physical system, link to folder and that readme
-talk about code, link to folder and that readme
+
+The CAPSAS is composed of sixteen hexagons, each with twelve LEDs and an IR distance sensor in the middle. An Arduino Mega receives information from the computer about what LED animation to display at which location. Once received, it will then return a message whenever the IR sensor for that hexagon is triggered. You can learn more about the physical construction of the CAPSAS at this [link](https://github.com/LIMB-UCF/CAPSAS_Documentation/tree/main/CAPSAS%20Physical%20Parts). 
+
+The sEMG of the forearm is recorded to the [Lab Streaming Layer](https://github.com/sccn/labstreaminglayer) (LSL). Additionally, kinematics of the trunk, arm, forearm, and wrist are recorded by four VIVE trackers. The IR sensor timestamps are currently recorded in a separate CSV to be interpreted in post-processing. You can learn more about the software of the CAPSAS at this [link](https://github.com/LIMB-UCF/CAPSAS_Documentation/tree/main/CAPSAS%20Code). 
