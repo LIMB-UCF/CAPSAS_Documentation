@@ -1,50 +1,23 @@
-STL Directory 
+<img alt="image" src="https://github.com/LIMB-UCF/CAPSAS_Documentation/assets/69369213/75fb4ede-9ac7-4609-b8e5-7d681ad9fa3f">
 
-connector bar (1 needed per height adjustment unit, 2 needed for whole system): 
+***Figure 1:** CAPSAS Dimensions and Frame*
 
-handle/grip for the height adjustment mechanism 
+The general structure of the CAPSAS is provided in Figure 1. Seven 36” and two 72” pieces of 1.5” square aluminum tubing are connected with metal brackets and 3D-printed parts to form the basis for which everything else is mounted. The 72” aluminum tubing was purchased with holes every 1 ½”, which is useful for the height adjustability of the system. Two pieces of the 36” tubing are used to form the base of the system and a 3D-printed [part](https://github.com/LIMB-UCF/CAPSAS_Documentation/blob/main/CAPSAS%20Physical%20Parts/STLs/Frame%20%26%20Hexagon%20Related%20Items/wheel%20cap%20v3.stl) is used to connect 4” casters to the tubing. Next, four [1.5” metal T brackets](https://www.amazon.com/dp/B0B34HG1YD/) were used to connect the vertical 72” tubing. Additionally, 3D-printed brackets were used for the [bottom](https://github.com/LIMB-UCF/CAPSAS_Documentation/blob/main/CAPSAS%20Physical%20Parts/STLs/Frame%20%26%20Hexagon%20Related%20Items/t%20connector%20v4.stl) and [top](https://github.com/LIMB-UCF/CAPSAS_Documentation/blob/main/CAPSAS%20Physical%20Parts/STLs/Frame%20%26%20Hexagon%20Related%20Items/top%20elbow%20v3.stl) horizontal pieces of 36” aluminum to form the frame. Finally, an H-shaped piece of aluminum can be prepared by cutting two pieces of 36” aluminum in half and connecting them 9” away from the ends of another 36” piece with [brackets](https://www.amazon.com/Riuog-Brackets-Patterned-Bracket-Furniture/dp/B0B7N1QT6Z/). The H-shaped piece of aluminum holds the hexagons on the front of the CAPSAS through the blue brackets seen in Figure 1. The brackets were created in [three different sizes](https://github.com/LIMB-UCF/CAPSAS_Documentation/tree/main/CAPSAS%20Physical%20Parts/STLs/Frame%20%26%20Hexagon%20Related%20Items/Frame%20to%20Hexagon) to fit the hexagons to the front of the CAPSAS. It is connected to the metal frame through the height adjustment mechanism, seen in green in Figure 1.
 
-uses two M3*16mm screws and two M3 nuts per bar 
+<img alt="image" src="https://github.com/LIMB-UCF/CAPSAS_Documentation/assets/69369213/e947b545-9935-45ab-883d-09529afc6afb">
 
-connector block (1 or 2 needed per hexagon dependent on location; ~28 needed for whole system): 
+***Figure 2:** Height Adjustment Mechanism*
 
-  *is epoxied to the back of the hexagon and M4 heat press inserts are added in the holes  
-  *M4*12mm screws are used to connect it to the arms and therefore the hexagon to the frame 
+The height adjustment mechanism was central to the CAPSAS because it allows our lab to collect data from various heights based on the shoulder height of the individual. A detailed look at the height adjustment mechanism is provided in Figure 2. It is composed of [several 3D-printed parts](https://github.com/LIMB-UCF/CAPSAS_Documentation/tree/main/CAPSAS%20Physical%20Parts/STLs/Frame%20%26%20Hexagon%20Related%20Items/Height%20Adjustment%20Mechanism) as well as a [spring](https://www.amazon.com/uxcell-Diameter-Stainless-Extended-Compressed/dp/B07MP9TDSH/) and [metal rod](https://www.amazon.com/YXQ-M6x180mm-Double-Adjustable-Stainless/dp/B07QPCWPXQ/) in each cylinder. An animation of the motion is also available in [this video](https://youtu.be/rhj-_HMj1IY).
 
-elbows (not yet added to OneDrive) 
+<img alt="image" src="https://github.com/LIMB-UCF/CAPSAS_Documentation/assets/69369213/75b92b9e-24b8-42ac-ab85-3c30d8371a42">
 
-height adjust pin end (2 needed per height adjustment unit, 4 needed for whole system): 
+***Figure 3:** Hexagon Layout*
 
-*M6 threaded rod inserted in the core of this print, with a M6 nut holding it in place 
+All sixteen hexagons are constructed similarly to the one in Figure 3 using [laser cutting](https://github.com/LIMB-UCF/CAPSAS_Documentation/tree/main/CAPSAS%20Physical%20Parts/DXFs) (we laser cut acrylic but later had to cover the shiny surface with matte paper due to reflection issues with the VIVE motion trackers). Each has 12 addressable RGB LEDs constructed by soldering four pieces of 3 LEDs cut from a [30 LED per meter strip](https://www.amazon.com/SEZO-Individually-Addressable-Programmable-Non-Waterproof/dp/B097BX7P3V/) (as seen in brown in Figure 3). The order in which the LEDs are soldered is essential, as the controller calls them sequentially. Each hexagon has its own power wires due to the heavy power draw if all 192 LEDs were lit simultaneously, but the DIN comes from the DOUT of the previous hexagon. Also, each has an IR distance sensor (center of Figure 3) with its power wires and data out wire that goes back to the Arduino I/O (Figure 4). The red [part](https://github.com/LIMB-UCF/CAPSAS_Documentation/blob/main/CAPSAS%20Physical%20Parts/STLs/Objects%20%26%20Holders/new%20magnet%20back%20v3.stl) at the center of Figure 3 is two Halbach arrays of [square neodymium magnets](https://www.amazon.com/LOVIMAG-Neodymium-Magnets-Whiteboard-Science/dp/B0CP1N6432/). Such an array of powerful magnets is necessary to ensure the participant does not accidentally knock off any [object holders](https://github.com/LIMB-UCF/CAPSAS_Documentation/tree/main/CAPSAS%20Physical%20Parts/STLs/Objects%20%26%20Holders) on the front of the hexagon. The light blue, rounded rectangles in Figure 3 are [3D-printed parts](https://github.com/LIMB-UCF/CAPSAS_Documentation/blob/main/CAPSAS%20Physical%20Parts/STLs/Frame%20%26%20Hexagon%20Related%20Items/Frame%20to%20Hexagon/connector%20block%20v2.stl) that connect the hexagon to the brackets seen in Figure 1. Heat press inserts were used so the parts could easily be screwed into the frame. Finally, [diffusers](https://github.com/LIMB-UCF/CAPSAS_Documentation/blob/main/CAPSAS%20Physical%20Parts/STLs/Frame%20%26%20Hexagon%20Related%20Items/light%20diffuse%20v2.stl) were 3D-printed from white PLA to reduce the intensity of the LED light.
 
-*the hole at the top is used with an M3*16mm screw to insert into the connector bar 
+<img alt="image" src="https://github.com/LIMB-UCF/CAPSAS_Documentation/assets/69369213/453fc22b-b8a9-443b-a957-027695e93e23">
 
-height adjust (main component of the height adjustment unit, 2 needed for whole system): 
+***Figure 4:** Arduino and Wiring*
 
-*this is the biggest plastic piece that the aluminum rod goes through 
-
-*uses four M5*16mm screws and four M5 nuts to adjust friction of the height adjustment mechanism 
-
-height adjust washer (2 needed per height adjustment unit, 4 needed for whole system): 
-
-*end part of the “height adjust pin end” that the spring uses to keep the pins under pressure 
-
-*M6 nut placed here to secure to the M6 threaded rod 
-
-large arms (6 needed for whole system): 
-
-*the biggest of the arms used to hold the hexagons in place 
-
-small arms (8 needed for whole system): 
-
-*medium sized arms used to hold the hexagons in place 
-
-T connectors (not yet added to OneDrive) 
-
-tiny arms (not yet added to OneDrive) 
-
-wheel cap (4 needed per system): 
-
-*used to attach the casters to the aluminum  
-
-*uses four M4*12mm screws and four M4 nuts 
+All 16 hexagons are connected to an Arduino Mega. Additionally, due to the potential high-power demands of the LEDs and the sheer number of wires, two pairs of [power rails](https://www.amazon.com/Positions-Terminal-Pre-Insulated-Barrier-MILAPEAK/dp/B07CLW5FPS/) must be used to power the hexagons. The power rails and Arduino are mounted to the aluminum frame behind the hexagons using [3D-printed parts](https://github.com/LIMB-UCF/CAPSAS_Documentation/tree/main/CAPSAS%20Physical%20Parts/STLs/Frame%20%26%20Hexagon%20Related%20Items/Arduino%20Mount%20to%20Frame). Finally, a [12 V](https://www.amazon.com/R-Tech-UL-Listed-Switching-Supply-Adapter/dp/B00FEOB4EI/) and [5 V](https://www.amazon.com/JOVNO-Converter-100-240V-Transformer-5-5x2-5mm/dp/B08764XJ2M/) power supply are used to input the power for the Arduino and LEDs, respectively. The power supplies are then secured to one of the vertical pieces of aluminum.
