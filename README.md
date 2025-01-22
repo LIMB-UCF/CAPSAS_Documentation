@@ -15,3 +15,7 @@ https://youtu.be/4Bmu42mNIyQ
 The CAPSAS is composed of sixteen hexagons, each with twelve LEDs and an IR distance sensor in the middle. An Arduino Mega receives information from the computer about what LED animation to display at which location. Once received, it will then return a message whenever the IR sensor for that hexagon is triggered. You can learn more about the physical construction of the CAPSAS at this [link](https://github.com/LIMB-UCF/CAPSAS_Documentation/tree/main/CAPSAS%20Physical%20Parts). 
 
 The sEMG of the forearm is recorded to the [Lab Streaming Layer](https://github.com/sccn/labstreaminglayer) (LSL). Additionally, kinematics of the trunk, arm, forearm, and wrist are recorded by four VIVE trackers. The IR sensor timestamps are currently recorded in a separate CSV to be interpreted in post-processing. You can learn more about the software of the CAPSAS at this [link](https://github.com/LIMB-UCF/CAPSAS_Documentation/tree/main/CAPSAS%20Code). 
+
+The [material cost](https://github.com/LIMB-UCF/CAPSAS_Documentation/blob/main/CAPSAS%20Physical%20Parts/CAPSAS%20BOM.csv) of the CAPSAS is around $1000 USD, assuming access to a 3D printer and laser cutter. The EMG and kinematics data tracking are also not included in that price, but the LSL can be configured for other devices too. 
+
+Don't want to build the CAPSAS but still want to use our dimensions? We created a [PDF poster](https://github.com/LIMB-UCF/CAPSAS_Documentation/blob/main/CAPSAS_Poster.pdf) of the CAPSAS for easy use!
