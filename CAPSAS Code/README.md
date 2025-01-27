@@ -6,7 +6,19 @@ Simultaneously, a program on the computer will be recording sEMG and kinematic d
 ## General Installation
 SteamVR must be installed and configured. 
 
-Additionally, Python must be installed with the required libraries. 
+Additionally, Python must be installed with the required libraries: 
+- numpy
+- pylsl 
+- pynput
+- colorama
+- pybullet
+- threading_module
+- triad_openvr
+- asyncio
+- struct
+- contextlib
+- dataclasses 
+- bleak 
 
 ## General Use
 
