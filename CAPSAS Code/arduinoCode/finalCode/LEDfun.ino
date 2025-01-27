@@ -142,27 +142,53 @@ void right(int hex, unsigned long startms) {
 
     if (c < 250) {
       i = c;
-      pixels.clear();
+      //pixels.clear();
       pixels.setPixelColor((hex*12) + 2, pixels.Color(0, i, i));
       pixels.setPixelColor((hex*12) + 9, pixels.Color(0, i, i));
+      pixels.setPixelColor((hex*12) + 0, pixels.Color(0, 0, 0));
+      pixels.setPixelColor((hex*12) + 1, pixels.Color(0, 0, 0));
+      pixels.setPixelColor((hex*12) + 3, pixels.Color(0, 0, 0));
+      pixels.setPixelColor((hex*12) + 4, pixels.Color(0, 0, 0));
+      pixels.setPixelColor((hex*12) + 5, pixels.Color(0, 0, 0));
+      pixels.setPixelColor((hex*12) + 6, pixels.Color(0, 0, 0));
+      pixels.setPixelColor((hex*12) + 7, pixels.Color(0, 0, 0));
+      pixels.setPixelColor((hex*12) + 8, pixels.Color(0, 0, 0));
+      pixels.setPixelColor((hex*12) + 10, pixels.Color(0, 0, 0));
+      pixels.setPixelColor((hex*12) + 11, pixels.Color(0, 0, 0));
       //pixels.show();
     }
     else if (c < 500) {
       i = c - 250;
-      pixels.clear();
+      //pixels.clear();
       pixels.setPixelColor((hex*12) + 2, pixels.Color(0, 250 - i, 250 - i));
       pixels.setPixelColor((hex*12) + 9, pixels.Color(0, 250 - i, 250 - i));
       pixels.setPixelColor((hex*12) + 1, pixels.Color(0, i, i));
       pixels.setPixelColor((hex*12) + 10, pixels.Color(0, i, i));
+      pixels.setPixelColor((hex*12) + 0, pixels.Color(0, 0, 0));
+      pixels.setPixelColor((hex*12) + 3, pixels.Color(0, 0, 0));
+      pixels.setPixelColor((hex*12) + 4, pixels.Color(0, 0, 0));
+      pixels.setPixelColor((hex*12) + 5, pixels.Color(0, 0, 0));
+      pixels.setPixelColor((hex*12) + 6, pixels.Color(0, 0, 0));
+      pixels.setPixelColor((hex*12) + 7, pixels.Color(0, 0, 0));
+      pixels.setPixelColor((hex*12) + 8, pixels.Color(0, 0, 0));
+      pixels.setPixelColor((hex*12) + 11, pixels.Color(0, 0, 0));
       //pixels.show();
     }
     else if (c < 750) {
       i = c - 500;
-      pixels.clear();
+      //pixels.clear();
       pixels.setPixelColor((hex*12) + 1, pixels.Color(0, 250 - i, 250 - i));
       pixels.setPixelColor((hex*12) + 10, pixels.Color(0, 250 - i, 250 - i));
       pixels.setPixelColor((hex*12) + 0, pixels.Color(0, i, i));
       pixels.setPixelColor((hex*12) + 11, pixels.Color(0, i, i));
+      pixels.setPixelColor((hex*12) + 2, pixels.Color(0, 0, 0));
+      pixels.setPixelColor((hex*12) + 9, pixels.Color(0, 0, 0));
+      pixels.setPixelColor((hex*12) + 3, pixels.Color(0, 0, 0));
+      pixels.setPixelColor((hex*12) + 4, pixels.Color(0, 0, 0));
+      pixels.setPixelColor((hex*12) + 5, pixels.Color(0, 0, 0));
+      pixels.setPixelColor((hex*12) + 6, pixels.Color(0, 0, 0));
+      pixels.setPixelColor((hex*12) + 7, pixels.Color(0, 0, 0));
+      pixels.setPixelColor((hex*12) + 8, pixels.Color(0, 0, 0));
       //pixels.show();
     }
 
@@ -181,27 +207,53 @@ void left(int hex, unsigned long startms) {
 
     if (c < 250) {
       i = c;
-      pixels.clear();
+      //pixels.clear();
       pixels.setPixelColor((hex*12) + 3, pixels.Color(0, i, i));
       pixels.setPixelColor((hex*12) + 8, pixels.Color(0, i, i));
+      pixels.setPixelColor((hex*12) + 0, pixels.Color(0, 0, 0));
+      pixels.setPixelColor((hex*12) + 1, pixels.Color(0, 0, 0));
+      pixels.setPixelColor((hex*12) + 2, pixels.Color(0, 0, 0));
+      pixels.setPixelColor((hex*12) + 4, pixels.Color(0, 0, 0));
+      pixels.setPixelColor((hex*12) + 5, pixels.Color(0, 0, 0));
+      pixels.setPixelColor((hex*12) + 6, pixels.Color(0, 0, 0));
+      pixels.setPixelColor((hex*12) + 7, pixels.Color(0, 0, 0));
+      pixels.setPixelColor((hex*12) + 9, pixels.Color(0, 0, 0));
+      pixels.setPixelColor((hex*12) + 10, pixels.Color(0, 0, 0));
+      pixels.setPixelColor((hex*12) + 11, pixels.Color(0, 0, 0));
       //pixels.show();
     }
     else if (c < 500) {
       i = c - 250;
-      pixels.clear();
+      //pixels.clear();
       pixels.setPixelColor((hex*12) + 3, pixels.Color(0, 250 - i, 250 - i));
       pixels.setPixelColor((hex*12) + 8, pixels.Color(0, 250 - i, 250 - i));
       pixels.setPixelColor((hex*12) + 4, pixels.Color(0, i, i));
       pixels.setPixelColor((hex*12) + 7, pixels.Color(0, i, i));
+      pixels.setPixelColor((hex*12) + 0, pixels.Color(0, 0, 0));
+      pixels.setPixelColor((hex*12) + 1, pixels.Color(0, 0, 0));
+      pixels.setPixelColor((hex*12) + 2, pixels.Color(0, 0, 0));
+      pixels.setPixelColor((hex*12) + 5, pixels.Color(0, 0, 0));
+      pixels.setPixelColor((hex*12) + 6, pixels.Color(0, 0, 0));
+      pixels.setPixelColor((hex*12) + 9, pixels.Color(0, 0, 0));
+      pixels.setPixelColor((hex*12) + 10, pixels.Color(0, 0, 0));
+      pixels.setPixelColor((hex*12) + 11, pixels.Color(0, 0, 0));
       //pixels.show();
     }
     else if (c < 750) {
       i = c - 500;
-      pixels.clear();
+      //pixels.clear();
       pixels.setPixelColor((hex*12) + 4, pixels.Color(0, 250 - i, 250 - i));
       pixels.setPixelColor((hex*12) + 7, pixels.Color(0, 250 - i, 250 - i));
       pixels.setPixelColor((hex*12) + 6, pixels.Color(0, i, i));
       pixels.setPixelColor((hex*12) + 5, pixels.Color(0, i, i));
+      pixels.setPixelColor((hex*12) + 0, pixels.Color(0, 0, 0));
+      pixels.setPixelColor((hex*12) + 1, pixels.Color(0, 0, 0));
+      pixels.setPixelColor((hex*12) + 2, pixels.Color(0, 0, 0));
+      pixels.setPixelColor((hex*12) + 3, pixels.Color(0, 0, 0));
+      pixels.setPixelColor((hex*12) + 8, pixels.Color(0, 0, 0));
+      pixels.setPixelColor((hex*12) + 9, pixels.Color(0, 0, 0));
+      pixels.setPixelColor((hex*12) + 10, pixels.Color(0, 0, 0));
+      pixels.setPixelColor((hex*12) + 11, pixels.Color(0, 0, 0));
       //pixels.show();
     }
 }
