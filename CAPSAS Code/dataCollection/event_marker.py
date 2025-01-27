@@ -1,17 +1,12 @@
 import serial
 import numpy as np
 import time
-import pylsl
 from pylsl import StreamInfo, StreamOutlet, local_clock, resolve_streams, stream_inlet, LostError
-import numpy as np
 import random
-import itertools
 import sys
 import pynput
 import os
-import pandas as pd
 from colorama import Fore, init
-import ast
 init(autoreset=True)
 
 
