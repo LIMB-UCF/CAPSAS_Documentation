@@ -42,6 +42,7 @@ p.getCameraImage(width=1000, height=1000, viewMatrix=view_mtx)
 num_trackers = num_devices   # replace with your number of trackers
 object_ids = [p.loadURDF("box2.urdf") for _ in range(num_trackers)]
 
+
 # Set data collection interval based on command line arguments
 if len(sys.argv) == 1: # Default interval
     interval = 1/950
